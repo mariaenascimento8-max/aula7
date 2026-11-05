@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula estilização - menus</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+</head>
+<body>
+    <!-- menu Superior -->
+    <header class="Topo" id="inicio">
+        <h1>Portal de Tecnologia</h1>
+        <p>Exemplo simples de HTML + CSS</p>
+        <nav class="menu-horizontal">
+            <ul>
+                <li><a href="">Início</a></li>
+
+                <li>
+                    <a href="">Informações</a>
+
+                    <ul class="submenu">
+                        <li><a href="">Imagens</a></li>
+                        <li><a href="">Listas</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="pagina">
+         <aside class="Menu-lateral">
+            <h2>Conteúdos</h2>
+            <nav>
+                <ul>class
+                    <li><a href="#imagens"><i class="fa-solid fa-image"></i>1.Imagens</a></li>
+
+                    <li><a href="#Listas">Informações<i class="fa-solid fa-list"></i>2.Listas</a></li>
+                    <li><a href="#Tabelas"><i class="fa-solid fa-table"></i>3.Tabelas</a></li>
+                    <li><a href="#links"><i class="fa-solid fa-link"></i>4.Links</a></li>
+                </ul>
+            </nav>
+         </aside>
+         <main  class="conteudo">
+            <section id="imagens" class="section">
+                <h2>1.imagens</h2>
+                <p>Tag Imagem</p>
+                <img class="imagem" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBe0ZIvL_IEom0fsfqiBwQOPIWu7n1HEoQ4SguESIBlqSvJRahOoUwjDXDs8hSXb_riuESzxf9o0-uUwEMu_Eo_r8Ww4nKkzzF3GtIY2M&s=10" alt="Imagem">
+            </section>
+            <section id="Listas" class="section2">
+                <h2>2. Lista</h2>
+                <p>Uma Lista não ordenada</p>
+                <ul class="Lista-conteudo">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </section>
+            <section>
+                <h2>3. Tabelas</h2>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Tecnologias</th>
+                        <th>Finalidade</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTML</td>
+                            <td>Estrutura de página</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="section3" id="links">
+                <h2>4. Links</h2>
+                <p><b>Um link para o homi mais belo do worl</b></p>
+                <a class="Link" href="https://pt.wikipedia.org/wiki/Jungkook#/media/Ficheiro:Jung_Kook_of_BTS,_February_12,_2026_(5).png">Clique aqui</a>
+            </section>
+         </main>
+    </div>
+</body>
+</html>
